@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: white;
+  padding: 10px 20px;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 40px;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #670b78;
+}
+
+.registration {
+  background-color: #670b78;
+  border: none;
+  color: white;
+  padding: 10px 5px;
+  cursor: pointer;
+  margin-bottom: 7px;
+}
+
+.hero {
+  padding: 50px 20px;
+  background-color: #f7f7f7;
+}
+
+.hero h2 {
+  color: #f3994a;
+}
+
+.donate-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 70%;
+  margin-left: 270px;
+}
+
+.donate-form input,
+.donate-form button {
+  padding: 10px;
+  font-size: 16px;
+}
+.donate-form input[type="email"] {
+  height: 12px; /* Adjust width for email input */
+  padding: 10px;
+  margin-top: 8px;
+}
+
+.donate-button {
+  background-color: #670b78;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 400px;
+  height: 50%;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.hero-image {
+  width: 80%;
+  max-width: 800px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.signup-container {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 90%;
+  justify-content: center;
+  margin-left: 500px;
+  margin-top: 70px;
+}
+
+.signup-container h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.signup-container p {
+  color: #666;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.signup-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #333;
+}
+
+.signup-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.signup-form button {
+  padding: 10px;
+  background-color: #670b78;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-left: 10px;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.signup-form button:hover {
+  background-color: #f3994a;
+}
+
+.login-link {
+  margin-top: 20px;
+  color: #666;
+}
+
+.login-link a {
+  color: #333;
+  text-decoration: none;
+}
+
+.google-signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 100px;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.google-signup img {
+  width: 20px;
+  height: 20px;
+}
+
+.google-signup:hover {
+  background-color: #f7f7f7;
+}
+
+.terms {
+  margin-top: 20px;
+  color: blue;
+}
+
+.terms a {
+  color: #670b78;
+  text-decoration: none;
+}
+/*Projects*/
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+.project-table th,
+.project-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.project-table th {
+  background-color: #670b78;
+  color: white;
+}
+
+.project-table tr:hover {
+  background-color: #f3994a;
+}
+
+.details-button,
+.send-funds-button {
+  background-color: #670b78;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.details-button:hover,
+.send-funds-button:hover {
+  background-color: #f3994a;
+}
+
+/* NewProjectForm Styling */
+form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form h1 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  display: inline-block;
+  background-color: #670b78;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #f3994a;
+}
+
+/* Admin View */
+
+.admin-view {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.admin-view h1 {
+  color: #670b78;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/*User View*/
+.user-view {
+  padding: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.add-project-button {
+  background-color: #670b78;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.add-project-button:hover {
+  background-color: #f3994a;
+}
