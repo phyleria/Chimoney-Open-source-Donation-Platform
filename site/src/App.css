@@ -313,3 +313,27 @@ button[type="submit"]:hover {
 .add-project-button:hover {
   background-color: #f3994a;
 }
+/* App.css */
+.thank-you-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.thank-you-container h1 {
+  color: green;
+  margin-top: 250px;
+
+}
+
+.thank-you-container .checkmark {
+  font-size: 50px;
+  color: green;
+}
+
+.thank-you-container .back-home-link {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #670b78;
+  text-decoration: none;
+}

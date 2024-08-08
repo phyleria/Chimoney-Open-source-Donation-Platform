@@ -14,17 +14,30 @@ function HomePage() {
       return;
     }
 
+    const options = {
+      method: 'POST',
+      url: 'https://api-v2-sandbox.chimoney.io/v0.2/payment/initiate',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        'X-API-KEY': '3a9331bb0ed50f637f92e6f710ee57f6d739424f5fe014f7cdc7364f727a5158'
+      },
+      data: {
+        payerEmail: email,  
+        valueInUSD: parseFloat(amount),
+        redirect_url: `${window.location.origin}/thank-you`  
+      }
+    };
+
     axios
-      .post("http://localhost:5000/initiate-payment", {
-        email,
-        amount: parseFloat(amount),
-      })
+      .request(options)
       .then((response) => {
-        console.log(response.data); // Log response data for debugging
-        if (response.data.paymentLink) {
-          window.location.href = response.data.paymentLink;
+        console.log(response.data);
+        if (response.data.status === "success") {
+          const paymentLink = response.data.data.paymentLink;
+          window.location.href = paymentLink;
         } else {
-          alert("Failed to get payment link");
+          alert("Failed to initiate payment");
         }
       })
       .catch((error) => {

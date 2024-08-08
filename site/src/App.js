@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./HomePage";
 import SignUp from "./SignUp";
-import UserView from "./components/UserView";
-import AdminView from "./components/AdminView";
+import ThankYou from "./ThankYou";
+
 
 function App() {
   const [projects, setProjects] = useState([
@@ -32,14 +32,10 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route
-          path="/user"
-          element={<UserView projects={projects} setProjects={setProjects} />}
-        />
-        <Route
-          path="/admin"
-          element={<AdminView projects={projects} setProjects={setProjects} />}
-        />
+        <Route path="/thank-you" element={<ThankYou />} />
+
+        
+       
       </Routes>
     </Router>
   );
