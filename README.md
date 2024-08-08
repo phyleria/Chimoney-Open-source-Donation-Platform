@@ -11,7 +11,5 @@ We welcome contributions to improve the platform! To contribute:
 3. Commit your changes and push them to your fork.
 4. Create a pull request, detailing your changes.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
